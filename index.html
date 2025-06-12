@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My PDF Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pdfs">PDF Files</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="toggleMode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to My PDF Collection</h1>
+    <p>View or download files below. Filter by name or category.</p>
+  </section>
+
+  <section id="pdfs">
+    <h2>Available PDF Files</h2>
+
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="🔍 Search by name..." />
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="notes">Notes</option>
+        <option value="books">Books</option>
+        <option value="certificates">Certificates</option>
+      </select>
+    </div>
+
+    <ul id="pdfList" class="pdf-list">
+      <li data-category="notes"><a href="pdfs/notes1.pdf" target="_blank">📝 Math Notes</a></li>
+      <li data-category="books"><a href="pdfs/book1.pdf" target="_blank">📘 Science Book</a></li>
+      <li data-category="certificates"><a href="pdfs/cert1.pdf" target="_blank">📄 Internship Certificate</a></li>
+      <li data-category="notes"><a href="pdfs/notes2.pdf" target="_blank">📝 History Notes</a></li>
+      <li data-category="books"><a href="pdfs/book2.pdf" target="_blank">📘 Biology Book</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: your@email.com</p>
+    <p>Phone: +91-1234567890</p>
+  </section>
+
+  <footer>
+    <p>© 2025 My PDF Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
