@@ -1,0 +1,95 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #333333;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --accent: #444444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a,
+.nav-links li button {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+#pdfs .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.pdf-list li {
+  margin: 10px 0;
+}
+
+.pdf-list li a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--accent);
+  color: var(--text);
+}
